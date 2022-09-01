@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+/*
+font-family: 'Kaushan Script', cursive;
+font-family: 'Fredericka the Great', cursive;
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+
+    font-family: 'Radio Canada', sans-serif;
+}
+.yellowBackground{
+    background: #fcd303;
+    height:100vh;
+
+}
+.sideBackground{
+    width:40%;
+    height:100vh;
+    background: #cfe39f;
+    position: absolute;
+    right:0;
+    top:0;
+/*    z-index: -1;*/
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.container{
+    width:90%;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+}
+.headerFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:20px;
+}
+.contactMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactMobile .contactInfo{
+    padding-right:5px;
+    text-align: right;
+    font-family: 'Canada', sans-serif;
+}
+.topHeader .navFlex{
+    margin:20px 0px;
+}
+.topHeader .navFlex ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap:50px;
+}
+.topHeader .navFlex ul li a{
+    text-decoration:none;
+    font-family: 'Canada', sans-serif;
+    font-size:12px;
+    color:black;
+    font-weight:600;
+    letter-spacing: 2px;
+}
+.showcaseGrid{
+    display: grid;
+    grid-template-columns:repeat(2,minmax(200px,600px));
+    grid-template-rows:repeat(1, 1fr);
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+img.mainPlate{
+    width:100%;
+    height:100%;
+    border-radius: 30%;
+    box-shadow: 0px 0px 50px -30px;
+}
+.mainImagePlate{
+    
+}
+.firstTitle{
+    display: flex;
+    align-items:end;
+    justify-content: center;
+}
+.firstTitle p{
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    font-family: 'Kaushan Script', cursive;
+}
+ 
+.leafFirstTitle{
+    transform-origin: top center;
+    transform: rotate(60deg);
+}
+.mainTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    position: absolute;  
+/*    margin-right:125px;*/
+    gap:50px;
+
+}
+
+.mainTitle h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: clamp(1.5rem, 6vw, 8rem);
+    font-weight:100;
+    
+}
+.timing{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin:20px 0px;
+}
+.mainTitle .underline::after{
+    content: '';
+    display: block;
+    background: black;
+    height:1px;
+    margin-top:25px
+}
+.mainTitle p,button{
+    font-family: arial;
+    font-weight:bolder;
+    font-size: clamp(1rem, 1.6vw, 3rem);
+    
+}
+.dayTime p{
+ font-size: clamp(0.7rem, 1.5vw, 2rem);
+    font-family: 'Fredericka the Great', cursive;
+    font-weight:100;
+}
+.mainTitle .timing{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight:100;
+    font-size: clamp(2rem, 5vw, 6rem);
+    margin-bottom: -15px;
+}
+.mainTitle button{
+    width:200px;
+    border:2px solid black;
+    background: none;
+    cursor:pointer;
+    font-size:clamp(1rem, 1.6vw, 1.5rem);
+    padding:10px;
+}
+.pasta{
+    position: absolute;
+    top:-80px;       
+}
+.tamatoFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.tamatoItems{
+    position: relative;
+    top:-60px;
+    right:50px;
+}
+.leafItems{
+position: relative;
+    top:-60px 
+}
+.spaghetti{
+    position: absolute;
+    left:-130px;
+    bottom: -130px;
+    z-index: 999;
+}
+.headingTitile {
+    text-align: center;
+    margin:100px 0px;
+}
+.headingTitile .hth2{
+    padding-bottom:20px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight:100;
+}
+.headingTitile .htp{
+    font-size: 1.1rem;
+    line-height: 30px;
+    font-weight: 800;
+}
+.threeImagesFlex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+/*    gap:10px;*/
+    margin: 0 auto;
+}
+
+
+.threeImages{
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+}
+.backdiv{
+    width:100%;  
+    background: #cfe39f;
+    position: absolute;
+    margin-top:-170px;
+
+    
+}
+.threeImageItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pTagPading{
+    padding:10px;
+}
+.orderbtn{
+     font-size: clamp(1rem, 1vw, 1.4rem);
+    background: #fcd303;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+    margin-bottom: 50px;
+
+}
+.threeImageItems > img{
+    width:clamp(200px, 25vw, 37rem);
+    box-shadow: 0px 0px 50px -20px;
+    border-radius:50%;
+}
+.discover{
+    font-family: arial;
+    font-weight: bolder;
+ font-size: clamp(1rem, 2vw, 1.5rem);
+    padding-top:20px;
+}
+.blackImagesflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.blackTwoImagesFlex{
+    display: flex;
+    flex-direction: column;
+}
+.blackImagesflex img{
+    width:100%
+}
+.mainblackImageP{
+    position: absolute;
+    padding-left:30px;
+    color:aliceblue;
+    top:20%
+}
+.sideOneblackImageP{
+    position: absolute;
+    padding-left:30px;
+    color:aliceblue;
+    top:0%;
+}
+
+.tryit{
+    font-family: arial;
+    font-weight: bolder;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding-top:20px;
+}
+.sideTwoblackImageP{
+    position: absolute;
+    padding-left:30px;
+    color:aliceblue;
+    top:47%;  
+}
+.mostUses{
+    font-family: arial;
+    font-weight: bolder;
+    font-size: clamp(1rem, 2.5vw, 5rem);
+}
+
+.inputFlex{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-top:-50px;
+    margin-bottom: 20px;
+}
+.inputFlex .inputItems input{
+    width:25vw;
+    height:40px;
+    border:1px solid gray;
+    margin: 10px 0;
+    padding:10px;
+    border-radius:5px;
+}
+.inputFlex .inputItems input[type="button"]{
+    font-size: clamp(0.6rem, 1vw, 1.4rem);
+    background: #fcd303;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+.slierFlex{
+    margin-top: 100px;
+    display: flex;
+    justify-content:center;
+    gap:15px;
+}
+.slierFlex img{
+    width:100%;
+     height: 100%;  
+}
+.slider {
+    flex-basis: 300px;
+    opacity: 0.5;
+    transition: all 300ms linear;    
+}
+.slider:hover{
+    box-shadow: 0px 0px 35px -15px; 
+    transform: scale(1.3);
+    opacity: 1;
+    z-index:999;
+}
+.containerfull{
+    width:100%;
+    position:relative;
+    color:white;
+    margin-top: 100px; 
+}   
+.footerFlex{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 50px;
+    
+
+}
+.footerOne{
+    width:40%;
+     display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.footerTwo p{
+    margin:20px;
+    font-size:clamp(1rem, 2vw, 1.3rem)
+}
+.footerTwo p:nth-of-type(1)::before{
+    content: url(images/location.png);
+    position: relative;
+    top:10px;
+    padding:8px;
+}
+.footerTwo p:nth-of-type(2)::before{
+    content: url(images/Email.png);
+    position: relative;
+    top:5px;
+    padding:8px;
+}
+.containerfull .footeBgImage{
+    width:100%;
+    height:600px;
+}
+.endFotter{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 50px;
+    position:absolute;
+    z-index:999;
+    bottom:40px;
+}
+.endFotter img{
+    width:35px;
+    padding:0px 5px;
+    cursor:pointer;
+}
+
+@media(max-width:760px){
+.yellowBackground{
+    background: #fcd303;
+    
+}
+   .showcaseGrid{
+    display: grid;
+    grid-template-columns:repeat(1,minmax(200px,600px));
+    grid-template-rows:repeat(2, 350px);
+    align-content: center;
+    margin-top: 10px;
+    }
+ 
+    .mainTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    position: relative; 
+    gap:30px;
+    }
+    .mainTitle .timing{
+        margin-top:-5px;
+    }
+    .mainTitle h1{
+        font-size:clamp(1.5rem, 12vw, 20rem);
+    }
+    .firstTitle{
+    display: flex;
+    justify-content: center;
+    margin-right: 80px    
+    }
+    .mainImagePlate{
+    text-align: center;
+    }
+    img.mainPlate{ 
+    width:370px;
+    height:100%;
+    border-radius: 30%;
+    box-shadow: 0px 0px 50px -30px;
+    }
+    .mainTitle{
+        gap:21px;
+    }
+    .spaghetti{
+        width:220px
+    }
+    .backdiv{
+        display: none;
+    }
+    .threeImagesFlex{
+        flex-direction:column;
+    }
+    .threeImagesFlex img{
+        width:380px
+    }
+    .discover{
+        font-size:clamp(1.2rem, 4vw, 4rem);
+    }
+    .pTagPading{
+        font-size:clamp(1rem, 3vw, 3rem);
+        padding:20px;
+    }
+    .blackImagesflex{
+        flex-direction: column;
+    }
+    .sideOneblackImageP {
+    top: 15%;
+    }
+    .mainblackImageP{
+    top: 54%;
+    }
+    .sideTwoblackImageP{
+    top: 77%;
+    }
+    
+    .tryit {
+        font-size: clamp(1rem, 5vw, 4rem);
+    }
+    .mostUses {
+    font-size: clamp(1rem, 5vw, 4rem);
+}
+    .slierFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider{
+        opacity: 1;
+    }
+    .slider:hover{
+    transform: scale(1);
+    opacity: 1;
+    z-index:999;
+}
+    .inputFlex{
+        width:90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inputFlex .inputItems input{
+        width:100%
+    }
+    .footerFlex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerOne{
+        width:100%;
+    }
+    .footerTwo{
+        width:100%;
+    }
+    .endFotter{
+        width: 90%;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerfull .footeBgImage{
+        height:800px;
+    }
+    .footerTwo p::before{
+        font-size: 5px;
+    } 
+    .pasta,.leaf1,.tamato1{
+        display: none;
+    }
+
+}
+
+@media(max-width:480px){
+        .mainImagePlate{
+        margin-top: -50px;
+        width:100%;
+    }
+    img.mainPlate{
+    width:90%;
+}
+    .pasta,.tamato1,.leaf1{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.tamato1{
+    position:absolute;
+}
+.leaf1{
+    position: absolute;
+    
+}
+*/
+    
+  
+/*    left:700px;*/
+/*    margin-top:-20px;*/
+
+/*
+.clip-path{
+    width:100px;
+    height:400px;
+    background: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+*/
